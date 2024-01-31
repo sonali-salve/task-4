@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+        /* CSS for Main heading section */
+.top-section{
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-image: url('main.jpg');
+    background-size: cover;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 80px;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+}
+.header ul li{
+    margin: 0 20px;
+}
+.header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.main-heading{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.main-heading h1{
+    font-size: 60px;
+}
+.main-heading h3{
+    font-size: 28px;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+.main-heading button{
+    color: #fff;
+    background-color: #3f51b5;
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+    border-radius: 3px;
+    padding: 17px 50px;
+    margin-top: 20px;
+}
+@media (max-width:850px){
+    .header{
+        flex-direction: column;
+    }
+    .main-heading h1{
+        font-size: 35px;
+    }
+    .main-heading button{
+        padding: 5px 20px;
+    }
+}
+    /* CSS for Destinations section */
+.destinations{
+    margin-top: 100px;
+}
+.destinations_div_1{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+.destinations h2{
+    color: #555555;
+    font-size: 35px;
+    margin-bottom: 30px ;
+}
+.destinations p{
+    color: #555555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+@media (max-width:700){
+    .destinations_div_1{
+        padding: 10px;
+    }
+}
+hr{
+    
+    width: 300px;
+    height: 4px;
+    background-color:#3f51b5;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+@media (max-width:400px){
+    hr{
+        width: auto;
+    }
+}
+.destinations_div_2 div{
+    height: 300px;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.flex-small{
+    width: 300px;
+    height: 300px;
+}
+
+.flex-big{
+    width: 60%;
+    height: 300px;
+}
+.destinations_div_2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.destinations_div_2 div{
+    margin: 20px;
+}
+@media (max-width:1000px){
+    .flex-big{
+        width: 300px;
+    }
+}
+@media (max-width:700px){
+    .destinations_div_2 div{
+        width: 100%;
+    }
+}
+    /* CSS for Tour Packages */
+.tour_packages{
+    background-color: #f5f5f5;
+    margin-top: 7em;
+
+}
+.tour_packages_div_1{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+.tour_packages_div_1 h2{
+
+    color: #555555;
+    font-size: 35px;
+    margin-top: 2em;
+    margin-bottom: 30px ;
+}
+.tour_packages_div_1 p{
+    color: #555555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+@media (max-width:700){
+    .tour_packages_div_1{
+        padding: 10px;
+    }
+}
+.tour_packages_div_2{
+    width: 100%;
+    padding: 0 40px;
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.package{
+    width: 37%;
+    display: grid;
+    color: #555555;
+    line-height: 1.8;
+    place-items: center;
+    text-align: center;
+    margin-bottom: 9em;
+}
+
+.package i{
+    color: #8c9eff;
+    font-size: 60px;
+}
+.package h3{
+    font-size: 30px;
+    
+}
+@media (max-width:800px){
+    .tour_packages_div_2{
+        display: block;
+    }
+    .tour_packages_div_2 div{
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 3em;
+    }
+
+}
+    /* CSS for Testimonials From Our Adventurers: */
+.testimonials{
+        text-align: center;
+        padding-bottom: 3em;
+}
+.testimonials_div_1{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+.testimonials_div_1 h2{
+    color: #555555;
+    font-size: 2em;
+    margin: 2em 0;
+}
+
+.testimonials .adventurers{
+    color: #555555;
+    width: 60%;
+    font-size: 22px;
+	font-weight: 400;
+	line-height: 1.4;
+	margin: 40px auto 25px;
+}
+.testimonials .author{
+    font-size: 1em;
+    margin: 0 auto 5em;
+}
+@media (max-width:800px){
+    .testimonials .adventurers{
+        width: 80%;
+        font-size: 18px;
+        margin: 20px auto 15px;
+    }
+}
+    /* CSS learn more */
+.learn{
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 5em;
+}
+.learn_div_1 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.learn_div_1 h2{
+    color: #555555;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.learn_div_1 p{
+    color: #555555;
+    line-height: 1.8;
+    margin-bottom: 2em;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+ #email{
+    width: 450px;
+    height: 60px;
+    padding: 15px;
+    font-size: 18px;
+    margin: 10px 20px;
+}
+#btn{
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #3f51b5;
+    font-size: 1em;
+    font-weight: bold;
+    width: 220px;
+    height: 60px;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px;
+} 
+@media (max-width:880px)
+{
+    .learn{
+        padding: 20px;
+    }
+    #email{
+        margin: 0;
+        padding: 5px;
+        width: auto;
+    }
+    #btn{
+        width: auto;
+    }
+
+}
+    /* CSS for Footer */
+.footer{
+    width: 100%;
+    height: 75px;
+    font-size: 14px;
+    background-color: #607d8B;
+    display: flex;
+    place-items: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer p{
+    text-align: center;
+    color:#fff;
+    filter: opacity(70%);
+}
+.footer ul li{
+    font-size: 30px;
+    display: inline;
+    list-style: none;
+    padding: 10px;
+}
+.footer ul li a i{
+    color: #e7dcdc;
+}
+.icons .fa:hover{
+    color: #fff;
+}
+@media (max-width:1000px){
+    .footer{
+        height: 12em;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+}
+
+
+
+
+
