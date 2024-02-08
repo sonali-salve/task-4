@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 35px 80px;
+    padding: 25px 80px;
 }
 .header ul{
     list-style: none;
@@ -30,6 +30,9 @@
 .header ul li a{
     color: #fff;
     text-decoration: none;
+}
+.logo{
+    padding-bottom: 20px;
 }
 .main-heading{
     display: grid;
@@ -58,6 +61,11 @@
 @media (max-width:850px){
     .header{
         flex-direction: column;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    .main-heading{
+        margin-top: 30px;
     }
     .main-heading h1{
         font-size: 50px;
